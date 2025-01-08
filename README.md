@@ -13,13 +13,15 @@ Clone the necessary repositories to your local machine:
 ```bash
 git clone git@github.com:bemeir/cds-shopware6.git
 cd cds-shopware6
-git checkout "Branch of your choice (e.g., 'master', 'staging', 'development')" - we want development here.
+git checkout "Branch of your choice (e.g., 'master', 'staging', 'development')"
+
+NOTE: USE development for now. It should contain all of the work and feel free to push everything in it. Static and etc files. We are working on Theme Architecture and we will be further
+cleaning everything.
 
 git clone git@github.com:bemeir/shopware-paas-local-dev.git
-cd shopware-paas-local-dev
 ```
 
-### 2. Install DDEV
+### 2. Install DDEV & OrbStack - WSL2 env will be done at a later time.
 
 Install and configure DDEV on your machine by following the [official DDEV installation guide](https://ddev.readthedocs.io/en/stable/#installation).
 
