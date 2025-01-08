@@ -124,4 +124,4 @@ cd ..
 
 ## License
 
-This script is provided as-is for development purposes. Handle sensitive data securely.
+This script is provided as-is for development purposes. Handle sensitive data securely. .env and .env.local have APP_SECRET of the current broken stage so we can continue working but we will be removing this and making sure its not defined as part of this repo. Please note that we still have to edit .env and .env.local well only .env.local after this build script finishes if we want to change some things like the said APP_SECRET. 
