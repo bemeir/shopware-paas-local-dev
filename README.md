@@ -13,7 +13,7 @@ Clone the necessary repositories to your local machine:
 ```bash
 git clone git@github.com:bemeir/cds-shopware6.git
 cd cds-shopware6
-git checkout "Branch of your choice (e.g., 'master', 'staging', 'development')"
+git checkout "Branch of your choice (e.g., 'master', 'staging', 'development')" - we want development here.
 
 git clone git@github.com:bemeir/shopware-paas-local-dev.git
 cd shopware-paas-local-dev
@@ -85,13 +85,14 @@ Navigate to the `shopware-paas-local-dev` folder and execute the setup script:
 ```bash
 cd shopware-paas-local-dev/
 chmod +x setup_env.sh
-./setup_env.sh
+cd ..
+./shopware-paas-local-dev/setup_env.sh
 ```
 
 ### Step 2: Actions Performed
 
 -   **Backup `services.yaml`:**
-    -   Creates a backup in `config-backup/` with a timestamped filename.
+    -   Creates a backup in `config-backup/` with a timestamped filename. - this is important when we push work to branch ignore the config/services.yaml both platform.sh and locals use it.
 -   **Replace `services.yaml`:**
     -   Replaces the root `services.yaml` with `services_local.yaml`.
 -   **Copy `.env` and `.env.local`:**
