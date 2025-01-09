@@ -134,6 +134,8 @@ restore_database() {
 
 # Function to run build-js.sh
 run_build_js() {
+    echo "Running composer install"
+    ddev exec composer install
     echo "Running bin/build-js.sh..."
     ddev exec bash -c "bin/build-js.sh"
     echo "JavaScript build completed."
