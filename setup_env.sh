@@ -4,7 +4,7 @@
 set -e
 
 # Define paths
-DEV_FOLDER="./dev-bemeir" # Path to the `dev-bemeir` folder
+DEV_FOLDER="./shopware-paas-local-dev" # Path to the `dev-bemeir` folder
 ROOT_DIR="./" # Root directory relative to the `dev-bemeir` folder
 BACKUP_DIR="$DEV_FOLDER/config-backup"
 TIMESTAMP=$(date +"%Y%m%d%H%M%S")
@@ -90,7 +90,7 @@ dump_and_download_database() {
     APP="app"
     REMOTE_USER="${PROJECT}-${ENVIRONMENT}-q5nzhaa--${APP}"
     REMOTE_HOST="ssh.us.platform.sh"
-    LOCAL_TMP_DIR="./dev-bemeir/"
+    LOCAL_TMP_DIR="./shopware-paas-local-dev/"
     REMOTE_TMP_DIR="../tmp"
     DATE=$(date +"%Y%m%d%H%M%S")
     DUMP_FILE="main-$DATE.sql"
